@@ -3,7 +3,7 @@
 <p align="center">
     <img src="logo.svg" alt="logo" class="center"/>
 </p>
-An automatic **PowerPoint to video converter**, just click and go!
+An automatic <strong>PowerPoint to video converter</strong>, just click and go!
 
 
 

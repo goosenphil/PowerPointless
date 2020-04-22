@@ -1,6 +1,6 @@
 # PowerPointless
 
-<img src="logo.svg" alt="logo" style="zoom:500%;" class="center"/>
+<img src="logo.svg" alt="logo" class="center"/>
 
 An automatic **PowerPoint to video converter**, just click and go!
 

@@ -7,38 +7,39 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="6.47611mm"
-   height="4.2333298mm"
-   viewBox="0 0 6.47611 4.2333298"
-   version="1.1"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0beta2 (unknown)"
    id="svg18"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="powerpointless_logo.svg">
+   version="1.1"
+   viewBox="0 0 629.47793 411.47967"
+   height="316.52283mm"
+   width="484.21378mm">
   <defs
      id="defs12" />
   <sodipodi:namedview
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="-8"
-     inkscape:window-height="942"
-     inkscape:window-width="2560"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="11.421578"
-     inkscape:cx="-16.15762"
-     inkscape:zoom="16"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     id="base"
-     fit-margin-top="0"
-     fit-margin-left="0"
+     scale-x="900"
+     fit-margin-bottom="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-left="0"
+     fit-margin-top="0"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.25"
+     inkscape:cx="66.884766"
+     inkscape:cy="1171.0371"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1052"
+     inkscape:window-x="1920"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata15">
     <rdf:RDF>
@@ -52,25 +53,25 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
-     inkscape:groupmode="layer"
+     transform="translate(128.7686,86.861823)"
      inkscape:label="Layer 1"
-     transform="translate(-182.73229,-116.76135)">
+     inkscape:groupmode="layer"
+     id="layer1">
     <path
-       style="fill:#008080;stroke-width:0.217094"
-       d="m 185.7349,117.31087 v 2.60513 h 3.4735 v -2.60513 z m 0.65128,2.38803 h -0.43419 v -0.43418 h 0.43419 z m 0,-0.86837 h -0.43419 v -0.43419 h 0.43419 z m 0,-0.86838 h -0.43419 v -0.43419 h 0.43419 z m 1.95384,1.73675 h -1.73675 v -2.17094 h 1.73675 z m 0.65129,0 h -0.43419 v -0.43418 h 0.43419 z m 0,-0.86837 h -0.43419 v -0.43419 h 0.43419 z m 0,-0.86838 h -0.43419 v -0.43419 h 0.43419 z m -1.95385,0 v 1.30257 l 0.86838,-0.65129 z"
-       id="path2"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#d45500;stroke-width:0.26458299"
-       d="m 182.73229,116.76135 v 3.43958 l 1.5875,0.79375 v -0.79375 h 1.32292 v -1.05833 h -0.26459 v 0.79375 h -1.05833 v -2.38125 l -1.05833,-0.52917 h 2.11666 v 1.05833 h 0.26459 v -1.32291 z m 0.28784,0.64957 0.51831,0.25942 c 0.1597,0.0798 0.28203,0.20333 0.36639,0.37103 0.085,0.16804 0.12764,0.34985 0.12764,0.54467 0,0.2119 -0.0426,0.35437 -0.12764,0.42737 -0.0844,0.0733 -0.20669,0.0701 -0.36639,-0.01 l -0.33227,-0.1664 v 0.86041 l -0.18604,-0.0935 z m 0.18604,0.33125 v 0.85834 l 0.33227,0.1664 c 0.10948,0.0547 0.188,0.0546 0.23565,-10e-4 0.0477,-0.0555 0.0718,-0.14574 0.0718,-0.27027 0,-0.11248 -0.0242,-0.22474 -0.0718,-0.33693 -0.0477,-0.11221 -0.12617,-0.1959 -0.23565,-0.25063 z m 3.83129,0.21998 -9.2e-4,0.40089 -2.45172,-0.0142 v 0.52916 l 2.45234,0.0225 7.5e-4,0.3642 0.86838,-0.65129 z"
-       id="path35"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccccccccccccsccccccccccsccccccccccc" />
+       id="path2"
+       d="M 163.08509,-33.448479 V 219.77016 h 337.6242 V -33.448479 Z m 63.30442,232.116519 h -42.20327 v -42.2023 h 42.20327 z m 0,-84.40557 H 184.18624 V 72.059205 h 42.20327 z m 0,-84.406533 h -42.20327 v -42.203268 h 42.20327 z M 416.30276,198.66804 H 247.49065 V -12.347331 h 168.81211 z m 63.30538,0 h -42.20327 v -42.2023 h 42.20327 z m 0,-84.40557 H 437.40487 V 72.059205 h 42.20327 z m 0,-84.406533 h -42.20327 v -42.203268 h 42.20327 z m -189.91422,0 V 156.46574 l 84.40654,-63.305387 z"
+       style="fill:#008080;stroke-width:21.1016" />
+    <path
+       sodipodi:nodetypes="cccccccccccccccccccsccccccccccsccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path35"
+       d="M -128.7686,-86.861823 V 247.46535 l 154.304999,77.1525 v -77.1525 H 154.12422 V 144.59568 h -25.71815 v 77.1525 H 25.536399 V -9.709323 L -77.333277,-61.144647 H 128.40607 V 41.725029 h 25.71815 V -86.861823 Z m 27.97805,63.138204 50.379729,25.215624 c 15.52284,7.75656 27.413316,19.763676 35.613108,36.064116 8.262,16.333488 12.406608,34.00542 12.406608,52.941924 0,20.596675 -4.14072,34.444765 -12.406608,41.540365 -8.20368,7.12476 -20.090268,6.81372 -35.613108,-0.972 l -32.296644,-16.17408 v 83.63185 l -18.083085,-9.0882 z m 18.083085,32.1975 v 83.430648 l 32.296644,16.174081 c 10.641456,5.31684 18.2736,5.30712 22.90518,-0.0972 4.63644,-5.3946 6.97896,-14.165929 6.97896,-26.270245 0,-10.933056 -2.35224,-21.844728 -6.97896,-32.749596 -4.63644,-10.906812 -12.263724,-19.04148 -22.90518,-24.361236 z m 372.401385,21.382056 -0.0864,38.966508 -238.307181,-1.38024 v 51.434355 l 238.367451,2.187 0.0756,35.40024 84.40653,-63.305391 z"
+       style="fill:#d45500;stroke-width:25.7174" />
     <g
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.02489996px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.0756226"
-       id="text48"
+       aria-label="P"
        transform="matrix(0.65673429,0,0,0.6191252,65.163915,41.78984)"
-       aria-label="P" />
+       id="text48"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.0249px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.0756226" />
   </g>
 </svg>

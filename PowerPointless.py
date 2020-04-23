@@ -6,6 +6,7 @@ import os
 import zipfile
 from ppsx_patcher import patch_ppsx
 import os.path
+import subprocess
 # Only for Windows computers running PowerPoint 2007 or newer
 
 use_voice_times = 15
@@ -14,9 +15,16 @@ resolution = 720 # Vertical resolution, default at 720p
 frame_rate = 24
 quality = 60
 
-def pptx_to_mp4(pptx_input,mp4_output):
-    print("Converting", pptx_input, "...")
-    ppt = win32com.client.Dispatch('PowerPoint.Application')
+def is_powerpoint_running():
+    tasks = subprocess.check_output('tasklist', shell=True)
+    if b"POWERPNT.EXE" in tasks.upper():
+        return True
+    else:
+        return False
+
+def pptx_to_mp4(pptx_input,mp4_output, ppt):
+    print("[+] Converting", pptx_input, "...")
+    # ppt = win32com.client.Dispatch('PowerPoint.Application')
     presentation = ppt.Presentations.Open2007(pptx_input,WithWindow=False,OpenAndRepair=True)
     presentation.CreateVideo(mp4_output,use_voice_times,slide_duration,resolution,frame_rate,quality)
     start_time_stamp = time.time()
@@ -47,11 +55,20 @@ def pptx_to_mp4(pptx_input,mp4_output):
             pass
     end_time_stamp=time.time()
     print("Conversion time:", round(end_time_stamp-start_time_stamp, 3), "seconds")
-    ppt.Quit()
-    pass
+    # ppt.Quit()
+    # pass
   
 if __name__ == '__main__':
-    print("\nPowerPointless V1.0 (PowerPoint to video converter) by Philip Goosen [19509766@sun.ac.za]\n")
+    print("\nPowerPointless V1.0 (PowerPoint to video converter) by Philip Goosen [19509766@sun.ac.za]")
+    print("https://github.com/goosenphil/PowerPointless\n")
+
+    if is_powerpoint_running():
+        print("Please close PowerPoint so I can run :/")
+        print("If I do nothing for a while after you closed it, check in task manager, PowerPoint might still be running in the background.")
+        while is_powerpoint_running():
+            time.sleep(0.1)
+
+    ppt = win32com.client.Dispatch('PowerPoint.Application')
     cwd = os.getcwd() + '\\'
     
     files = os.listdir(os.curdir)
@@ -66,13 +83,13 @@ if __name__ == '__main__':
         if ".pptx" in file:
             ppt_counter += 1
             if os.path.isfile(cwd+file[:-5]+'.mp4')==False or os.path.getsize(cwd+file[:-5]+'.mp4')==0: # Check if conversion already happened
-                pptx_to_mp4(cwd+file,cwd+file[:-5]+'.mp4')
-                # import ipdb; ipdb.set_trace()
-                print("[+] Converting", file) 
+                pptx_to_mp4(cwd+file,cwd+file[:-5]+'.mp4', ppt)
             else:
                 print("[-] Skipping", file)
-            
     
+    print("Waiting for PowerPoint to quit...")
+    ppt.Quit()
+    # print("Done!")
     if ppt_counter == 0:
         input("\nPlease put your powerpoint files in the same folder as this program - Press ENTER to exit...")
     else:

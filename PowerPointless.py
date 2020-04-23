@@ -7,6 +7,7 @@ import zipfile
 from ppsx_patcher import patch_ppsx
 import os.path
 import subprocess
+from colorama import Fore, Back, Style, init as colorama_init
 # Only for Windows computers running PowerPoint 2007 or newer
 
 use_voice_times = 15
@@ -50,22 +51,23 @@ def pptx_to_mp4(pptx_input,mp4_output, ppt):
             print(' '*24 , end="\r") # Clear loading bar
             break
         except Exception:
-            print(bar[i % len(bar)],"converting...", end="\r")
+            print(Fore.GREEN,bar[i % len(bar)],Style.RESET_ALL,"converting...", end="\r")
             i += 1
             pass
     end_time_stamp=time.time()
-    print("Conversion time:", round(end_time_stamp-start_time_stamp, 3), "seconds")
+    print(Fore.GREEN + "Converted in:", round(end_time_stamp-start_time_stamp, 3), "seconds" + Style.RESET_ALL)
     # ppt.Quit()
     # pass
   
 if __name__ == '__main__':
-    print("\nPowerPointless V1.0 (PowerPoint to video converter) by Philip Goosen [19509766@sun.ac.za]")
+    colorama_init()
+    print("\nPowerPointless V1.1 (PowerPoint to video converter) by Philip Goosen [19509766@sun.ac.za]")
     print("https://github.com/goosenphil/PowerPointless\n")
 
-    print("Please don't open PowerPoint while this program is running")
+    print(Fore.YELLOW + "Please don't open PowerPoint while this program is running" + Style.RESET_ALL)
 
     if is_powerpoint_running():
-        print("Please close PowerPoint so I can run :/")
+        print(Fore.RED + "Please close PowerPoint so I can run :/" + Style.RESET_ALL)
         print("If I do nothing for a while after you closed it, check in task manager, PowerPoint might still be running in the background.")
         while is_powerpoint_running():
             time.sleep(0.1)
@@ -76,7 +78,7 @@ if __name__ == '__main__':
     files = os.listdir(os.curdir)
     for file in files:
         if ".ppsx" in file:
-            print("Detected ppsx file! -", file, " creating pptx patched version...")
+            print(Fore.CYAN + "Detected ppsx file! -", file, " creating pptx patched version..." + Style.RESET_ALL)
             patch_ppsx(file)
     
     files = os.listdir(os.curdir)
@@ -92,7 +94,9 @@ if __name__ == '__main__':
     ppt.Quit()
     # print("Done!")
     if ppt_counter == 0:
-        input("\nPlease put your powerpoint files in the same folder as this program - Press ENTER to exit...")
+        print(Fore.YELLOW+ "\nPlease put your PowerPoint files in the same folder as this program "+ Style.RESET_ALL + "- Press ENTER to exit...")
+        input()
     else:
         print("Waiting for PowerPoint to quit...")
-        input("\nDone, study well! :) - Press ENTER to exit")
+        print(Fore.GREEN + "\nDone, study well! :)"+ Style.RESET_ALL + " - Press ENTER to exit..." )
+        input()

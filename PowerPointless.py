@@ -12,7 +12,7 @@ use_voice_times = 15
 slide_duration = 1 # only matters if use_voice_times = 0
 resolution = 720 # Vertical resolution, default at 720p
 frame_rate = 24
-quality = 70
+quality = 60
 
 def pptx_to_mp4(pptx_input,mp4_output):
     print("Converting", pptx_input, "...")

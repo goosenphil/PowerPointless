@@ -5,13 +5,14 @@ import time
 import os
 import zipfile
 from ppsx_patcher import patch_ppsx
-# Only for Windows computers running PowerPoint 2010 or newer
+import os.path
+# Only for Windows computers running PowerPoint 2007 or newer
 
-use_voice_times = 1
+use_voice_times = 15
 slide_duration = 1 # only matters if use_voice_times = 0
 resolution = 720 # Vertical resolution, default at 720p
 frame_rate = 24
-quality = 80
+quality = 70
 
 def pptx_to_mp4(pptx_input,mp4_output):
     print("Converting", pptx_input, "...")
@@ -64,7 +65,12 @@ if __name__ == '__main__':
     for file in files:
         if ".pptx" in file:
             ppt_counter += 1
-            pptx_to_mp4(cwd+file,cwd+file[:-5]+'.mp4')
+            if os.path.isfile(cwd+file[:-5]+'.mp4')==False or os.path.getsize(cwd+file[:-5]+'.mp4')==0: # Check if conversion already happened
+                pptx_to_mp4(cwd+file,cwd+file[:-5]+'.mp4')
+                # import ipdb; ipdb.set_trace()
+                print("[+] Converting", file) 
+            else:
+                print("[-] Skipping", file)
             
     
     if ppt_counter == 0:

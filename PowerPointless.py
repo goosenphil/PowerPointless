@@ -62,6 +62,8 @@ if __name__ == '__main__':
     print("\nPowerPointless V1.0 (PowerPoint to video converter) by Philip Goosen [19509766@sun.ac.za]")
     print("https://github.com/goosenphil/PowerPointless\n")
 
+    print("Please don't open PowerPoint while this program is running")
+
     if is_powerpoint_running():
         print("Please close PowerPoint so I can run :/")
         print("If I do nothing for a while after you closed it, check in task manager, PowerPoint might still be running in the background.")
@@ -87,10 +89,10 @@ if __name__ == '__main__':
             else:
                 print("[-] Skipping", file)
     
-    print("Waiting for PowerPoint to quit...")
     ppt.Quit()
     # print("Done!")
     if ppt_counter == 0:
         input("\nPlease put your powerpoint files in the same folder as this program - Press ENTER to exit...")
     else:
+        print("Waiting for PowerPoint to quit...")
         input("\nDone, study well! :) - Press ENTER to exit")

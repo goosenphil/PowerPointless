@@ -19,3 +19,12 @@ Place the program in the same folder as the power point files you want to conver
 
 
 
+
+
+## Acknowledgements
+
+I would like to thank the following people for testing the initial version of the program and providing insightful feedback on potential problems.
+
+- Tahera Mucheka
+- Jason Avenant
+
